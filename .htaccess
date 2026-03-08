@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /SIP_ABACUS/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9-]+)/?$ index.php?url=$1 [L,QSA]

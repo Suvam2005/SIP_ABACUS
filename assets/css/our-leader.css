@@ -1,0 +1,47 @@
+.banner-common{
+    width: 99vw;
+    height: 48vh;
+}
+.mt-98{
+    margin-top: 98px;
+}
+.heading-4{
+    top: 35vh;
+    left: 10vw;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Roboto Slab", Sans-serif;
+    color: var(--bs-white);
+}
+.our-leaders{
+    display: flex !important;
+}
+.leader-img{
+    height: 170px;
+    width: 160px !important;
+    border-radius: 0 !important;
+}
+.pt-30{
+    padding-top: 15px;
+    margin-left: 20px;
+}
+/* .leader-btn{
+    width: 170px;
+} */
+
+.cards{
+    width: 185px !important;
+    border: none !important;
+}
+.cards a{
+    color: var(--bs-orange);
+    font-size: 15px;
+}
+.ps-20{
+    padding-left: 30px;
+}
+.card-body{
+    background: var(--bs-gray-100);
+    width: 183px;
+    margin-left: -11px;
+}
