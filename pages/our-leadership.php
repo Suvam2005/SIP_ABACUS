@@ -18,22 +18,25 @@
             <img src="assets/uploads/<?= $row['image_path'] ?>" class="card-img-top leader-img" alt="Leaders">
             <div class="card-body">
                 <h5 class="card-title text-center"><?= $row['name'] ?></h5>
-                <p class="card-text text-center"><?= $row['role'] ?></p>
+                <p class="card-text text-center card-role"><?= $row['role'] ?></p>
+                <p class="card-text text-center card-branch"><?= $row['sip_abacus_branch']?></p>
                 <a href="#" class="leader-btn ps-20 text-decoration-none fw-bold" data-bs-toggle="modal" data-bs-target="#leaderModal<?= $row['id'] ?>" 
                 data-name= "<?= $row['name'] ?>"
                 data-role= "<?= $row['role'] ?>">READ MORE<i class="fa-solid fa-angle-right ps-1 fw-bold"></i></a>
             </div>
         </div>
         <div class="modal fade" id="leaderModal<?= $row['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-main">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-dialog text-center">
-                        <p><?= $row['name'] ?></p>
-                        <p><?= $row['role'] ?></p>
+                    
+                    <div class="modal-body text-start">
+                        <button type="button" class="modal-btn position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark fs-4"></i>
+                        </button>
+                        <p class="modal-name fs-3"><?= $row['name'] ?></p>
+                        <p class="modal-role m-10"><?= $row['role'] ?></p>
+                        <p class="modal-branch m-15"><?= $row['sip_abacus_branch'] ?></p>
+                        <p class= "para-description fs-6"><?= $row['description'] ?></p>
                     </div>
                 </div>
             </div>

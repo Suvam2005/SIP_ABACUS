@@ -46,7 +46,7 @@
             <a class="nav-link nav-link4 <?= ($current_page == 'reviews') ? 'active' : '' ;?>" href="<?= BASE_URL ?>reviews">Reviews</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link5 <?= ($current_page == 'partner-program') ? 'active' : '' ;?>" href="<?= BASE_URL ?>partner-program">Partner Events</a>
+            <a class="nav-link nav-link5 <?= ($current_page == 'contact-us') ? 'active' : '' ;?>" href="<?= BASE_URL ?>contact-us">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -54,9 +54,9 @@
 
     <!-- CTA Button - Right -->
     <div class="col-auto ps-0 button-class">
-      <a href="<?= BASE_URL ?>pages/book_class.php" class="d-lg-block">
+      <a href="<?= BASE_URL ?>partner-program" class="d-lg-block">
         <button class="custom-button">
-          Book a Free Trial Class
+          Partner Events
         </button>
       </a>
     </div>

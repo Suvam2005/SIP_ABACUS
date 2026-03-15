@@ -1,12 +1,15 @@
+.container-sm{
+    position: relative;
+}
 .banner-common{
-    width: 99vw;
+    max-width: 99vw;
     height: 48vh;
 }
 .mt-98{
     margin-top: 98px;
 }
 .heading-4{
-    top: 35vh;
+    top: 20.5vh;
     left: 10vw;
     font-size: 30px;
     font-weight: 400;
@@ -44,4 +47,116 @@
     background: var(--bs-gray-100);
     width: 183px;
     margin-left: -11px;
+}
+.card-role{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: var(--bs-gray-600);
+}
+.card-branch{
+    margin-top: -13px;
+}
+.modal-main{
+    max-width: 700px !important;
+}
+.modal-content{
+    min-height: 350px;
+    padding: 30px;
+    background: var(--bs-orange) !important;
+}
+.modal-name{
+    color: var(--bs-white);
+    font-weight: 500;
+}
+.modal-role{
+    color: var(--bs-white);
+}
+.m-10{
+    margin-top: -15px;
+}
+.m-15{
+    margin-top: -20px;
+}
+.modal-btn{
+    background: transparent;
+    border: none;
+}
+.modal-btn i{
+    color: var(--bs-white);
+}
+.para-description{
+    color: var(--bs-white);
+}
+/* Mobile Devices */
+
+@media (max-width: 768px){
+
+    .container-sm{
+        overflow-x: hidden;
+    }
+
+    /* Banner */
+    .banner-common{
+        min-width: 320vw !important;
+    }
+
+    /* Card layout */
+    .cards{
+        width:100% !important;
+        max-width:320px;
+        margin:auto;
+        border:none !important;
+    }
+
+    /* Image */
+    .leader-img{
+        width:100% !important;
+        height:auto;
+        object-fit:cover;
+    }
+
+    /* Card body */
+    .card-body{
+        width:100%;
+        margin-left:0;
+        text-align:center;
+        padding:20px;
+        background: transparent !important;
+    }
+
+    /* Read more button */
+    .cards a{
+        display:inline-block;
+        margin-top:10px;
+        padding-left:0;
+    }
+    .modal-dialog{
+        margin:0 !important;
+        max-width:100% !important;
+        height:100vh;
+    }
+
+    .modal-content{
+        height:80vh;
+        border-radius:0 !important;
+        padding:25px !important;
+        background: var(--bs-orange) !important;
+    }
+
+    .modal-body{
+        padding:0;
+        max-width:80vh !important;
+    }
+    .para-description{
+        height:80vh !important;
+        max-height:420px;
+        overflow-y:scroll;
+    }
+
+    .modal-btn{
+        top:15px;
+        right:15px;
+        font-size:20px;
+    }
+
 }

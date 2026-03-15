@@ -11,7 +11,8 @@
         "about-us" => "pages/about.php",
         "services" => "pages/services.php",
         "partner-program" => "pages/partner_program.php",
-        "our-leadership" => "pages/our-leadership.php"
+        "our-leadership" => "pages/our-leadership.php",
+        "contact-us" => "pages/contact.php"
     ];
 
     if(array_key_exists($url, $routes)){
