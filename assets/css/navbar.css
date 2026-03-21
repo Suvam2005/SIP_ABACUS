@@ -5,7 +5,7 @@
     position: relative;
 }
 .logo{
-    width: 100px;
+    width: 210px;
 }
 .navbar-brand{
     width: 100px;
@@ -61,7 +61,7 @@
     top: 38px;
     right: 0;
     width: 0px;
-    height: 2px;
+    height: 2.5px;
     background-color: var(--bs-orange);
     transition: 0.6s ease;
 }
@@ -74,7 +74,7 @@
     top: 38px;
     right: 0;
     width: 0px;
-    height: 2px;
+    height: 2.5px;
     background-color: var(--bs-orange);
     transition: 0.6s ease;
 }
@@ -319,6 +319,7 @@
         position: absolute;
         bottom: 2.5vh;
         left: 22%;
+        width: 150px;
     }
     .navbar-toggler{
         position: absolute;
@@ -328,7 +329,7 @@
     .custom-button{
         position: absolute;
         left: 63%;
-        bottom: 1.5vh;
+        bottom: 1.2vh;
         width: 130px;
         height: 65px;
         border-radius: 10px;
