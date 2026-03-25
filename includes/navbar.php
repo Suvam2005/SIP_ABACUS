@@ -32,7 +32,7 @@
             <a class="nav-link nav-link1 <?= ($current_page == 'home') ? 'active' : '' ;?>" href="<?= BASE_URL ?>home">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle <?= ($current_page == 'about-us') ? 'active' : '' ;?>" href="<?= BASE_URL ?>about-us" role="button" aria-expanded="false">
+            <a class="nav-link dropdown-toggle <?= ($current_page == 'about-us') ? 'active' : '' ;?>" href="<?= BASE_URL ?>about-us" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
               About Us
             </a>
             <ul class="dropdown-menu custom-dropdown">
